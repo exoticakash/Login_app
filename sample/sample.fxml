@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <AnchorPane fx:id="layer1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" StackPane.alignment="TOP_RIGHT">
+        <TextField fx:id="t1" layoutX="200.0" layoutY="174.0" prefHeight="26.0" prefWidth="200.0" promptText="Name" />
+        <TextField fx:id="t2" layoutX="200.0" layoutY="226.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="200.0" promptText="Email" />
+        <PasswordField fx:id="t3" layoutX="200.0" layoutY="279.0" prefHeight="26.0" prefWidth="200.0" promptText="Password" />
+        <Label fx:id="bl1" layoutX="247.0" layoutY="65.0" style="-fx-background-color: white;" text="Create account" textAlignment="CENTER">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="bl2" layoutX="225.0" layoutY="141.0" text="or use email for registration" />
+        <JFXButton fx:id="b1" buttonType="RAISED" layoutX="213.0" layoutY="104.0" ripplerFill="WHITE">
+         <graphic>
+              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@icons/facebook.png" />
+                  </image>
+                  <viewport>
+                      <Rectangle2D />
+                  </viewport>
+              </ImageView>
+         </graphic></JFXButton>
+        <JFXButton fx:id="b2" buttonType="RAISED" layoutX="273.0" layoutY="104.0" ripplerFill="WHITE">
+         <graphic>
+              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@icons/skype.png" />
+                  </image>
+              </ImageView>
+         </graphic></JFXButton>
+        <JFXButton fx:id="b3" buttonType="RAISED" layoutX="333.0" layoutY="104.0" ripplerFill="WHITE">
+         <graphic>
+              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@icons/linkedin.png" />
+                  </image>
+              </ImageView>
+         </graphic></JFXButton>
+        <JFXButton fx:id="signup" buttonType="RAISED" layoutX="265.0" layoutY="336.0" onMouseClicked="#signup" style="-fx-background-color: #401644;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="al5" layoutX="237.0" layoutY="64.0" prefHeight="26.0" prefWidth="126.0" text="Sign in using" textFill="#401644">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="t5" layoutX="200.0" layoutY="226.0" prefHeight="26.0" prefWidth="200.0" promptText="Password" />
+        <Label fx:id="al7" layoutX="248.0" layoutY="269.0" prefHeight="20.0" prefWidth="114.0" text="forgot password" textAlignment="CENTER" textFill="#401644">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="signin2" buttonType="RAISED" layoutX="264.0" layoutY="305.0" prefHeight="30.0" prefWidth="69.0" style="-fx-background-color: #401644;" text="Sign In" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="al6" layoutX="239.0" layoutY="141.0" prefHeight="18.0" prefWidth="131.0" text="or use email account" textFill="#401644" />
+        <Label fx:id="p1" layoutX="435.0" layoutY="179.0" text="Label" />
+        <Label fx:id="p2" layoutX="435.0" layoutY="230.0" text="Label" />
+        <Label fx:id="p3" layoutX="435.0" layoutY="284.0" text="Label" />
+        <Label fx:id="p4" layoutX="435.0" layoutY="312.0" text="Label" />
+        <TextField fx:id="t4" layoutX="199.0" layoutY="175.0" prefHeight="26.0" prefWidth="200.0" promptText="Name" />
+    </AnchorPane>
+    <AnchorPane fx:id="layer2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #401644;" StackPane.alignment="TOP_LEFT">
+        <Label fx:id="al1" layoutX="80.0" layoutY="99.0" text="Welcome Back !" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="al2" layoutX="88.0" layoutY="99.0" style="-fx-background-color: #401644;" text="Hello Friend" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="signin" buttonType="RAISED" layoutX="115.0" layoutY="276.0" onMouseClicked="#btn" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #401644;" text="Sign In" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+        <Label fx:id="al3" layoutX="68.0" layoutY="171.0" style="-fx-background-color: #401644;" text="Enter your personal details" textFill="WHITE" />
+        <Label fx:id="al4" layoutX="73.0" layoutY="191.0" style="-fx-background-color: #401644;" text="and start journey with us" textFill="WHITE" />
+        <JFXButton fx:id="signup2" buttonType="RAISED" layoutX="116.0" layoutY="238.0" onMouseClicked="#btn2" ripplerFill="WHITE" style="-fx-background-color: #401644;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXButton>
+    </AnchorPane>
+</StackPane>
